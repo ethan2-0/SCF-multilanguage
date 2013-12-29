@@ -31,7 +31,9 @@ namespace Serengetti.SCF {
         /// </summary>
         /// <param name="closeStream">Whether or not to close the stream. At the moment, it will do nothing if this is false.</param>
         public void close(bool closeStream) {
-            stream.Close();
+            if (closeStream) {
+                stream.Close();
+            }
         }
         /// <summary>
         /// Process the file or stream.

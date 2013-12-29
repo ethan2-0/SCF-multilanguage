@@ -1,0 +1,7 @@
+package com.serengetti_software.scf;
+
+public class SyntaxException extends Exception {
+	public SyntaxException(int line) {
+		
+	}
+}
