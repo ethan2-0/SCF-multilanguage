@@ -1,0 +1,5 @@
+C:\Users\EthanReg\documents\visual studio 2010\Projects\SCF\SCF\bin\Release\SCF.dll
+C:\Users\EthanReg\documents\visual studio 2010\Projects\SCF\SCF\bin\Release\SCF.pdb
+C:\Users\EthanReg\documents\visual studio 2010\Projects\SCF\SCF\obj\Release\SCF.dll
+C:\Users\EthanReg\documents\visual studio 2010\Projects\SCF\SCF\obj\Release\SCF.pdb
+C:\Users\EthanReg\Documents\Visual Studio 2010\Projects\SCF\SCF\obj\Release\SCF.csprojResolveAssemblyReference.cache

@@ -1,0 +1,4 @@
+C:\Users\EthanReg\Documents\Visual Studio 2010\Projects\SCF\SCF\bin\Debug\SCF.dll
+C:\Users\EthanReg\Documents\Visual Studio 2010\Projects\SCF\SCF\bin\Debug\SCF.pdb
+C:\Users\EthanReg\Documents\Visual Studio 2010\Projects\SCF\SCF\obj\Debug\SCF.dll
+C:\Users\EthanReg\Documents\Visual Studio 2010\Projects\SCF\SCF\obj\Debug\SCF.pdb
