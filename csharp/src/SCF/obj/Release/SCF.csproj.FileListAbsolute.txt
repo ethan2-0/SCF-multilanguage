@@ -3,3 +3,8 @@ C:\Users\EthanReg\documents\visual studio 2010\Projects\SCF\SCF\bin\Release\SCF.
 C:\Users\EthanReg\documents\visual studio 2010\Projects\SCF\SCF\obj\Release\SCF.dll
 C:\Users\EthanReg\documents\visual studio 2010\Projects\SCF\SCF\obj\Release\SCF.pdb
 C:\Users\EthanReg\Documents\Visual Studio 2010\Projects\SCF\SCF\obj\Release\SCF.csprojResolveAssemblyReference.cache
+C:\Users\EthanReg\Documents\GitHub\SCF-multilanguage-2\csharp\src\SCF\bin\Release\SCF.dll
+C:\Users\EthanReg\Documents\GitHub\SCF-multilanguage-2\csharp\src\SCF\bin\Release\SCF.pdb
+C:\Users\EthanReg\Documents\GitHub\SCF-multilanguage-2\csharp\src\SCF\obj\Release\SCF.csprojResolveAssemblyReference.cache
+C:\Users\EthanReg\Documents\GitHub\SCF-multilanguage-2\csharp\src\SCF\obj\Release\SCF.dll
+C:\Users\EthanReg\Documents\GitHub\SCF-multilanguage-2\csharp\src\SCF\obj\Release\SCF.pdb
