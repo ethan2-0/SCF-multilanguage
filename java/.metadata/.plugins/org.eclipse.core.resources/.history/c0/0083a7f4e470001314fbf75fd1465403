@@ -1,0 +1,27 @@
+package com.serengetti_software.scf;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.HashMap;
+
+public class SCFReader {
+	InputStream stream;
+	public SCFReader(String path) throws FileNotFoundException {
+		this.stream = new FileInputStream(path);
+	}
+	public SCFReader(InputStream stream) {
+		this.stream = stream;
+	}
+	public void close(boolean closeStream) throws IOException {
+		if(closeStream) {
+			stream.close();
+		}
+	}
+	public HashMap<String, String> process() {
+		InputStreamReader reader = new InputStreamReader(stream);
+		
+	}
+}

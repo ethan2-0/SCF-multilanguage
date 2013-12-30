@@ -52,7 +52,7 @@ public class SCFReader {
 						value += parts[index];
 					}
 				}
-				values.put(name, value);
+				values.put(key, value);
 			}
 		}
 		lines.add(line);

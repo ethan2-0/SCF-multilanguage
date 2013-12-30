@@ -52,7 +52,6 @@ public class SCFReader {
 						value += parts[index];
 					}
 				}
-				values.put(name, value);
 			}
 		}
 		lines.add(line);

@@ -21,7 +21,7 @@ public class SCFReader {
 			stream.close();
 		}
 	}
-	public HashMap<String, String> process() throws IOException, SyntaxException {
+	public HashMap<String, String> process() throws IOException {
 		InputStreamReader reader = new InputStreamReader(stream);
 		HashMap<String, String> values = new HashMap<String, String>();
 		ArrayList<String> lines = new ArrayList<String>();
@@ -36,23 +36,10 @@ public class SCFReader {
 				line += c;
 			}
 		}
-		int lineNum = 0;
 		for(String currentLine : lines) {
-			lineNum++;
 			String[] parts = currentLine.split(":");
 			if(parts.length < 2) {
-				throw new SyntaxException(lineNum, "Error processing SCF. The name/value pair on line " + lineNum + " did not have a value.");
-			} else {
-				String name = "";
-				String value = "";
-				for(int index = 0; index < parts.length; index++) {
-					if(i < 2) {
-						name = parts[index];
-					} else {
-						value += parts[index];
-					}
-				}
-				values.put(name, value);
+				
 			}
 		}
 		lines.add(line);

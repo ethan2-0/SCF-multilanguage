@@ -49,10 +49,9 @@ public class SCFReader {
 					if(i < 2) {
 						name = parts[index];
 					} else {
-						value += parts[index];
+						
 					}
 				}
-				values.put(name, value);
 			}
 		}
 		lines.add(line);
