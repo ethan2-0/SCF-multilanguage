@@ -1,0 +1,15 @@
+package com.serengetti_software.scf;
+
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
+
+public class SCFWriter {
+	private OutputStream stream;
+	private OutputStreamWriter writer;
+	public SCFWriter(OutputStream stream) {
+		this.stream = stream;
+	}
+	public void close() {
+		writer.close();
+	}
+}

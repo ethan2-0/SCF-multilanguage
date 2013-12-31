@@ -1,0 +1,17 @@
+package com.serengetti_software.scf_test;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import com.serengetti_software.scf.*;
+
+public class Main {
+	public static void main(String[] args) throws Exception {
+		SCFReader reader = new SCFReader("root-folder\\example.scf");
+		HashMap<String, String> values = reader.process();
+		reader.close(true);
+		for(Map<String, String>.Entry<String, String> pairs : values) {
+			
+		}
+	}
+}

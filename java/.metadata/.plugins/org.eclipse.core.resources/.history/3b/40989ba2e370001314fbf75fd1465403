@@ -1,8 +1,0 @@
-package com.serengetti_software.scf;
-
-import java.io.InputStream;
-
-public class SCFReader {
-	InputStream stream;
-	
-}

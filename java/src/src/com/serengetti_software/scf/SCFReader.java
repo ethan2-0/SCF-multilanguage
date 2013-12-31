@@ -1,5 +1,6 @@
 package com.serengetti_software.scf;
 
+import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -10,31 +11,34 @@ import java.util.HashMap;
 
 public class SCFReader {
 	InputStream stream;
+	BufferedReader reader;
 	public SCFReader(String path) throws FileNotFoundException {
-		this.stream = new FileInputStream(path);
+		this(new FileInputStream(path));
 	}
 	public SCFReader(InputStream stream) {
 		this.stream = stream;
 	}
 	public void close(boolean closeStream) throws IOException {
 		if(closeStream) {
-			stream.close();
+			reader.close();
 		}
 	}
 	public HashMap<String, String> process() throws IOException, SyntaxException {
-		InputStreamReader reader = new InputStreamReader(stream);
 		HashMap<String, String> values = new HashMap<String, String>();
 		ArrayList<String> lines = new ArrayList<String>();
-		int i;
-		String line = "";
-		//Read the lines, one by one.
+		reader = new BufferedReader(new InputStreamReader(stream));
+		//This isn't how we're doing it.
+		/*String output = "";
+		Read the lines, one by one.
 		while((i= reader.read()) != -1) {
 			char c = (char) i;
-			if(c == '\n') {
-				lines.add(line);
-			} else {
-				line += c;
-			}
+			output += c;
+		}
+		String[] linesArray = output.split("\n");
+		*/
+		String line;
+		while((line = reader.readLine()) != null) {
+			lines.add(line);
 		}
 		int lineNum = 0;
 		for(String currentLine : lines) {
@@ -46,10 +50,10 @@ public class SCFReader {
 				String name = "";
 				String value = "";
 				for(int index = 0; index < parts.length; index++) {
-					if(i < 2) {
+					if(index < 1) {
 						name = parts[index];
 					} else {
-						value += parts[index];
+						value += parts[index] + (index < parts.length - 1 ? ":" : "");
 					}
 				}
 				values.put(name, value);

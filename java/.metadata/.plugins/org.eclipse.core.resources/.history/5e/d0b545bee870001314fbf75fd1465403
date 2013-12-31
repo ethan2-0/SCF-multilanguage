@@ -1,0 +1,7 @@
+package com.serengetti_software.scf_test;
+
+public class Main {
+	public static void main(String[] args) {
+		SCReader reader;
+	}
+}

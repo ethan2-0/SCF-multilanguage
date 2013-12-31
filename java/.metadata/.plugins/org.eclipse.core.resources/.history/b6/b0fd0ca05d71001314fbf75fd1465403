@@ -1,0 +1,9 @@
+package com.serengetti_software.scf;
+
+public class SCFWriter {
+	private OutputStream stream;
+	private OutputStreamWriter writer;
+	public SCFWriter(OutputStream stream) {
+		
+	}
+}
