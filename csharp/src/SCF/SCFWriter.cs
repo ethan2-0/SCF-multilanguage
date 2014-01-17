@@ -12,8 +12,11 @@ namespace Serengetti.SCF {
             this.stream = stream;
             StreamWriter writer = new StreamWriter(stream);
         }
-        public SCFWriter(String file) {
-            stream = new FileStream(file, FileMode.Create);
+        public SCFWriter(String path) {
+            if (!File.Exists(path)) {
+                throw new FileNotFoundException("SCFWriter: File " + path + " could not be found.");
+            }
+            stream = new FileStream(path, FileMode.Create);
             writer = new StreamWriter(stream);
         }
         public void close() {

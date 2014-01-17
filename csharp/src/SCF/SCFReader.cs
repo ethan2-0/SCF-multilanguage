@@ -14,6 +14,9 @@ namespace Serengetti.SCF {
         /// </summary>
         /// <param name="path"></param>
         public SCFReader(String path) {
+            if (!File.Exists(path)) {
+                throw new FileNotFoundException("SCFReader: File " + path + " could not be found.");
+            }
             stream = new FileStream(path, FileMode.Open);
         }
         /// <summary>

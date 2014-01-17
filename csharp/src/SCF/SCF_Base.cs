@@ -9,7 +9,7 @@ namespace SCF {
     /// </summary>
     public class SCF_Base {
         public static String getVersion() {
-            return "1.0.2A";
+            return "1.0.3A";
         }
     }
 }

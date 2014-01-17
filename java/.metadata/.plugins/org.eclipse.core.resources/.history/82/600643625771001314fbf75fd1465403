@@ -1,9 +1,0 @@
-package com.serengetti_software.scf_test;
-
-import com.serengetti_software.scf.*;
-
-public class Main {
-	public static void main(String[] args) throws Exception {
-		SCFReader reader = new SCFReader();
-	}
-}
